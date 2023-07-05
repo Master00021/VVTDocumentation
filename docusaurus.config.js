@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'VVT Template',
+        title: 'VamVam Template',
         logo: {
           alt: 'VamVam logo',
           src: 'img/logo.svg',
@@ -76,14 +76,20 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/api', label: 'API', position: 'left'},
+          {
+            type: 'docSidebar',
+            sidebarId: 'apiSidebar',
+            position: 'left',
+            label: 'API',
+          },
           {to: '/blog', label: 'Blog', position: 'left'},
+          
           //{ type: 'docsVersionDropdown' }, //Para navegar entre versiones de la documentacion. Se necesita de generar las versiones para que funcione correctamente // Comando para implementar sistema de veriones: yarn run docusaurus docs:version 0.0.0
           {
             href: 'https://github.com/Master00021/VVTDocumentation.git',
             label: 'GitHub',
             position: 'right',
-          },
+          },  
         ],
       },
       footer: {
